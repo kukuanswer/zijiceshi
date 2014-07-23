@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_bg_default" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/label_menu_pwd"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/menu_password_input"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input_white"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:paddingBottom="3dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp" />
+
+        <Button
+            android:id="@+id/bnt_confirm"
+            android:layout_width="@dimen/input_width"
+            android:layout_height="@dimen/input_heigt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_confirm"
+            android:onClick="onClick"
+            android:text="@string/bnt_label_yes"
+            android:textColor="@color/text_color_white" />
+    </LinearLayout>
+
+</RelativeLayout>

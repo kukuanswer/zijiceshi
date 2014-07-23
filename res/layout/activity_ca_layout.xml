@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_bg_default" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top_bar_layout" />
+
+    <TextView
+        android:id="@+id/ca_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_bg_default" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/label_search_frequency"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/label_text_size" />
+
+            <EditText
+                android:id="@+id/frequency_input"
+                android:layout_width="@dimen/input_width"
+                android:layout_height="@dimen/input_heigt"
+                android:background="@drawable/bg_input_white"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/label_search_symbol_rate"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/label_text_size" />
+
+            <EditText
+                android:id="@+id/symbol_rate_input"
+                android:layout_width="@dimen/input_width"
+                android:layout_height="@dimen/input_heigt"
+                android:background="@drawable/bg_input_white"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/label_search_polar"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/label_text_size" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/input_width"
+                android:layout_height="@dimen/input_heigt"
+                android:background="@drawable/bg_input_white" >
+
+                <Button
+                    android:id="@+id/bnt_polar_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/ic_arrow_right"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/bnt_polar_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/ic_arrow_left"
+                    android:onClick="onClick" />
+
+                <TextView
+                    android:id="@+id/polar_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="H"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/label_search_save"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/label_text_size" />
+
+            <Button
+                android:id="@+id/bnt_confirm"
+                android:layout_width="@dimen/input_width"
+                android:layout_height="@dimen/input_heigt"
+                android:background="@drawable/btn_confirm"
+                android:onClick="onClick"
+                android:text="@string/bnt_label_yes"
+                android:textColor="@color/text_color_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

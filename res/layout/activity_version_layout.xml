@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_bg_default" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bnt_version_download"
+            android:layout_width="@dimen/input_width"
+            android:layout_height="@dimen/input_heigt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_confirm"
+            android:onClick="onClick"
+            android:text="@string/label_download_software"
+            android:textColor="@color/text_color_white" />
+
+        <Button
+            android:id="@+id/bnt_version_update"
+            android:layout_width="@dimen/input_width"
+            android:layout_height="@dimen/input_heigt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_confirm"
+            android:onClick="onClick"
+            android:text="@string/label_update_software"
+            android:textColor="@color/text_color_white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_update_not"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/bnt_version_not"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/ic_lock_nor"
+                android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

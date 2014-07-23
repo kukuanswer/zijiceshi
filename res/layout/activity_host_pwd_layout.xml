@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_bg_default" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top_bar_layout" />
+
+    <EditText
+        android:id="@+id/old_pwd_input"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_input_white"
+        android:hint="@string/label_old_menu_pwd"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/old_pwd_type_1_input"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/old_pwd_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_input_white"
+        android:hint="@string/label_new_menu_pwd"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/old_pwd_type_2_input"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/old_pwd_type_1_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_input_white"
+        android:hint="@string/label_renew_menu_pwd"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:paddingBottom="4dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="4dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/bnt_confirm"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/old_pwd_type_2_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_confirm"
+        android:onClick="onClick"
+        android:text="@string/bnt_label_yes"
+        android:textColor="@color/text_color_white" />
+
+</RelativeLayout>

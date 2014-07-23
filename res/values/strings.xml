@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mwatch</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="error_network">未找到机顶盒，请检查</string>
+    <string name="error_channel_empty">节目列表为空</string>
+    <string name="hint_input_channel_password">请输入频道密码</string>
+    <string name="label_soft_overdue">软件已经过期</string>
+    <string name="label_hint">提示</string>
+    <string name="label_buffering">正在缓冲,请稍候…</string>
+    <string name="bnt_label_yes">确定</string>
+    <string name="bnt_label_no">取消</string>
+    <string name="label_connecting">正在连接...</string>
+    <string name="error_channel">节目密码错误</string>
+    <string name="label_download_doing">正在下载新固件</string>
+    <string name="label_power_off">请保证机顶盒不要关机,掉电</string>
+    <string name="label_has_new_version">有固件版本更新,是否下载?</string>
+    <string name="label_no_new_version">当前为最新版本</string>
+
+    <!-- 设置 -->
+    <string name="title_setting">设置</string>
+    <string name="label_wifi">无线</string>
+    <string name="label_parent_lock">父母锁</string>
+    <string name="label_host_password">主机密码</string>
+    <string name="label_firmware_update">固件更新</string>
+    <string name="label_signal_quality">信号质量</string>
+    <string name="label_ca">CA</string>
+    <string name="label_search_program">搜索节目</string>
+    <string name="label_reset_factory">恢复出厂设置</string>
+    <string name="label_system_info">系统信息</string>
+
+    <!-- 注册事件 -->
+    <string name="label_register_no_signal">没有信号</string>
+    <string name="label_register_search_status">搜索状态:</string>
+    <string name="label_register_search_satellite">搜索卫星:</string>
+    <string name="label_register_search_program">搜索节目:</string>
+
+    <!-- wifi -->
+    <string name="title_wifi">WIFI</string>
+    <string name="hint_input_wifi_password">请输入主机密码</string>
+    <string name="error_wifi_pwd">wifi密码错误</string>
+    <string name="error_wifi_name_error">wifi名不能为空</string>
+    <string name="error_wifi_lenght_error">wifi密码必须大于8位</string>
+    <string name="error_wifi_modify_sucess">wifi密码修改成功</string>
+    <string name="error_wifi_modify_error">wifi密码修改失败</string>
+    <string name="error_wifi_query_error">wifi查询错误</string>
+
+    <!-- 父母锁 -->
+    <string name="title_parent_lock">父母锁</string>
+    <string name="label_parent_lock_hint">请选择需要加锁的节目</string>
+    <string name="hint_input_host_password">请输入主机密码</string>
+    <string name="error_host_pwd">主机密码错误</string>
+    <string name="error_server_response">服务器返回错误</string>
+    <string name="error_old_pwd">旧密码错误</string>
+    <string name="error_new_pwd">新密码不能为空</string>
+    <string name="error_channel_pwd">节目密码不能为空</string>
+    <string name="error_confirm_pwd">二次输入的错误不一致</string>
+    <string name="label_lock_sucess">设置成功</string>
+    <string name="label_lock_failed">设置失败</string>
+    <string name="error_not_need_pwd">不需要密码: </string>
+    <string name="label_modify_host_pwd_sucess">修改成功</string>
+    <string name="label_modify_host_pwd_failed">修改失败</string>
+
+    <!-- 主机秘密 -->
+    <string name="title_menu_lock">主机密码</string>
+    <string name="label_old_menu_pwd">请输入原始密码</string>
+    <string name="label_new_menu_pwd">请输入主机密码</string>
+    <string name="label_renew_menu_pwd">请输入节目密码</string>
+
+    <!-- 版本更新 -->
+    <string name="title_version">固件更新</string>
+    <string name="label_download">下载版本: </string>
+    <string name="label_download_finish">下载完成</string>
+    <string name="label_download_error">文件下载错误</string>
+    <string name="label_cv_upload_stb_success">文件上传成功</string>
+    <string name="label_start_update_stb">现在开始升级机顶盒?</string>
+    <string name="label_update_stb_error">机顶盒升级失败</string>
+    <string name="label_update_stb_succeed">机顶盒升级成功</string>
+    <string name="label_update_stb_doing">正在升级机顶盒,请稍等...</string>
+    <string name="label_download_software">连接因特网下载固件</string>
+    <string name="label_update_software">连接机顶盒更新固件</string>
+    <string name="label_update_not">请勿提醒我升级固件</string>
+    <string name="error_cv_file">请先下载固件</string>
+
+    <!-- 信号强度 -->
+    <string name="title_signal">信号质量</string>
+    <string name="label_signal">信号质量:</string>
+    <string name="label_noise_ratio">信号强度:</string>
+    <string name="error_signal">信号质量搜索错误</string>
+
+    <!-- CA -->
+    <string name="title_ca">CA 信息</string>
+    <string name="label_ca_expire">CA到期时间 </string>
+
+    <!-- 搜索节目 -->
+    <string name="title_search">节目搜索</string>
+    <string name="label_search_channel_succes">节目搜索成功</string>
+    <string name="error_search_channel">节目搜索失败</string>
+    <string name="error_frequency">频率错误</string>
+    <string name="error_symbol_rate">符号率错误</string>
+    <string name="label_search_frequency">频率</string>
+    <string name="label_search_symbol_rate">符号率</string>
+    <string name="label_search_polar">Polar</string>
+    <string name="label_search_save">保存</string>
+
+    <!-- 出厂设置 -->
+    <string name="title_reset_factory">恢复出厂设置</string>
+    <string name="label_menu_pwd">请输入主机密码: </string>
+    <string name="label_pwd_empty">密码不能为空</string>
+    <string name="label_reset_warning">你确定要恢复出厂设置?</string>
+    <string name="sucess_reset_factory">恢复出厂设置成功</string>
+    <string name="error_reset_factory">恢复出厂设置失败</string>
+
+    <!-- 系统信息 -->
+    <string name="title_system_info">系统信息</string>
+    <string name="label_sytem">系统版本信息如下:</string>
+    <string name="label_machine_soft_version">固件版本:</string>
+    <string name="label_boost_version">软件版本:</string>
+    <string name="label_release_date">发布日期:</string>
+    <string name="label_database_version">数据库版本:</string>
+    <string name="label_lib_version">库版本:</string>
+    <string name="label_client_version">客户端版本:</string>
+    <string name="label_error_version_info">系统信息查询失败</string>
+
+</resources>
